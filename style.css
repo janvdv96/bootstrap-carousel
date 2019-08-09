@@ -1,0 +1,12 @@
+.card {
+  border: none; }
+  .card p {
+    font-size: 80%; }
+  .card .card-footer {
+    border: none;
+    background: none; }
+
+.card-img-top {
+  width: 200px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<a name="top"></a>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Carousel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="https://via.placeholder.com/1600x600//808080" alt="First slide">
+            <div class="carousel-caption d-none d-md-block text-left">
+                <h5>Gray Banner</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, recusandae, rerum? Adipisci architecto
+                    dicta harum itaque magni porro provident! Aliquid autem eum id iste pariatur porro quaerat quisquam
+                    sunt veniam?</p>
+                <button type="button" class="btn btn-primary">Learn More</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="https://via.placeholder.com/1600x600/60b9d1" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block text-left">
+                <h5>Blue Banner</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis debitis dolorem dolorum
+                    excepturi fugit incidunt magnam natus nihil omnis optio provident quae, quam quibusdam repellendus
+                    similique totam veniam voluptate voluptatem!</p>
+                <button type="button" class="btn btn-primary">Learn More</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="https://via.placeholder.com/1600x600/000000" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block text-left">
+                <h5>Dark Banner</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur distinctio dolore dolorem
+                    dolorum esse incidunt, ipsa molestiae necessitatibus placeat quasi quod quos repellat saepe sed
+                    tempore tenetur unde vero.</p>
+                <button type="button" class="btn btn-primary">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="container my-5">
+
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card text-center border-none">
+                <img src="https://via.placeholder.com/150" alt="" class="card-img-top rounded-circle img-fluid mx-auto">
+                <div class="card-body">
+                    <h3>Header</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam iste magni natus
+                        nihil, sequi similique vero? Autem, cumque dolor facere mollitia pariatur perferendis
+                        praesentium quidem recusandae repellat, similique voluptatum.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-secondary">Learn More &gt;&gt;</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card text-center">
+                <img src="https://via.placeholder.com/150" alt="" class="card-img-top rounded-circle img-fluid mx-auto">
+                <div class="card-body">
+                    <h3>Header</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non, sint. Ab adipisci aperiam
+                        architecto debitis dolores eos eum illo illum, nihil numquam, optio porro quibusdam ratione
+                        temporibus voluptatum. Suscipit.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-secondary">Learn More &gt;&gt;</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card text-center">
+                <img src="https://via.placeholder.com/150" alt="" class="card-img-top rounded-circle img-fluid mx-auto">
+                <div class="card-body">
+                    <h3>Header</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam error fugit nihil quo saepe sed
+                        similique, sunt. Eum eveniet ex, expedita incidunt laboriosam minus pariatur sapiente tempora
+                        veritatis vero, voluptatibus.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-secondary">Learn More &gt;&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row my-5">
+        <div class="col text-left my-auto text-md-center text-lg-left">
+            <h1>First Featurette Heading</h1>
+            <h2 class="text-muted">Wow, what a start!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto corporis dicta dignissimos
+                doloremque, enim facilis fugiat laborum nesciunt nisi nobis optio, perspiciatis porro quos reiciendis
+                repellendus sequi temporibus, veniam.</p>
+        </div>
+        <div class="col text-center">
+            <img class="image-fluid" src="https://via.placeholder.com/500" alt="First Featurette">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row my-5">
+        <div class="col text-center">
+            <img class="image-fluid" src="https://via.placeholder.com/500" alt="First Featurette">
+        </div>
+        <div class="col text-left my-auto text-md-center text-lg-left">
+            <h1>Second Featurette Heading</h1>
+            <h2 class="text-muted">Looking Good, Keep going!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eaque enim harum impedit magnam maxime modi
+                nobis pariatur, perspiciatis placeat quae, tenetur velit. Accusantium animi deleniti neque, quae
+                repellat sapiente?</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row my-5">
+        <div class="col text-left my-auto text-md-center text-lg-left">
+            <h1>Last Featurette Heading</h1>
+            <h2 class="text-muted">Going out with a bang!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facere harum, libero nihil praesentium
+                soluta tempore temporibus totam. Asperiores et fugit in ipsam iusto molestias odio qui quisquam sequi
+                totam!</p>
+        </div>
+        <div class="col text-center">
+            <img class="image-fluid" src="https://via.placeholder.com/500" alt="First Featurette">
+        </div>
+    </div>
+
+    <hr>
+
+    <footer class="panel-footer text-muted mw-100">
+        <div class="row">
+            <div class="col">
+                <span class="">&#160 2019 Company, Inc. -
+                    <a class="text-primary" href="#">Privacy</a> - <a class="text-primary" href="#">Terms</a>
+                </span>
+            </div>
+            <div class="col text-right">
+            <span class=""><a href="#top">Back to top of page</a></span>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>
